@@ -58,6 +58,29 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         dismiss(animated: true, completion: nil)
     }
     
+    func testFunction1() {
+        // Hide the keyboard.
+        nameTextField.resignFirstResponder()
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController = UIImagePickerController()
+        
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController1 = UIImagePickerController()
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController2 = UIImagePickerController()
+        
+        // Only allow photos to be picked, not taken.
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.allowsEditing = false
+        
+        
+        // Make sure ViewController is notified when the user picks an image.
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
     
     func testFunction() {
         // Hide the keyboard.
@@ -75,7 +98,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
-        imagePickerController.allowsEditing = true
+        imagePickerController.allowsEditing = false
         
         
         // Make sure ViewController is notified when the user picks an image.
