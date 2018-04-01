@@ -75,14 +75,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.allowsEditing = true
+
         
         
         // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
     }
-    
-    
+
     
     func testFunction() {
         // Hide the keyboard.
@@ -100,7 +100,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
-        imagePickerController.allowsEditing = true
+        imagePickerController.allowsEditing = false
         
         
         // Make sure ViewController is notified when the user picks an image.
