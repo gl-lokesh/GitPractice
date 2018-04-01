@@ -66,6 +66,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // UIImagePickerController is a view controller that lets a user pick media from their photo library.
         let imagePickerController = UIImagePickerController()
         
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController1 = UIImagePickerController()
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController2 = UIImagePickerController()
+        
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
         
